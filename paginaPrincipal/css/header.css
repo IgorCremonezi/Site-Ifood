@@ -5,9 +5,11 @@
 	z-index: 10;
 	top: 0;
 	width: 100%;
+	list-style-type: none;
 }
 
-.menu-header nav, ul {
+.menu-header nav,
+ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -40,8 +42,27 @@
 }
 
 .cabecalho {
-	width: 75em;
+	width: 100%;
 	margin: 0 auto;
+	position: relative;
+}
+
+#entrar {
+	position: absolute;
+	right: 1.25em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu-header ul:last-child li:first-child p {
+	position: absolute;
+	right: 12em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu-header i {
+	display: none;
 }
 
 * {
@@ -50,7 +71,29 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 	width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+	.invisivel {
+		display: none;
+	}
+
+	#entrar {
+		display: block;
+		margin-right: -3em;
+	}
+
+	#hamburguer {
+		display: block;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.menu-lista>li>img {
+		margin-right: 15em;
+	}
 }

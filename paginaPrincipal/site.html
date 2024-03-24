@@ -5,26 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery de Comida e Mercado - iFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 
 <body>
     <header class="menu-header">
         <nav class="cabecalho">
+            <i class="fas fa-bars" id="hamburguer"></i>
             <ul class="menu-lista">
                 <li><img src="./assets/logo.svg" alt="Logo IFood"></li>
-                <li><p>Restaurante e Mercado</p></li>
-                <li><p>Carreiras</p></li>
-                <li><p>iFood Card</p></li>
+                <li class="invisivel menu-inv">
+                    <p>Entregador</p>
+                </li>
+                <li class="invisivel menu-inv">
+                    <p>Restaurante e Mercado</p>
+                </li>
+                <li class="invisivel menu-inv">
+                    <p>Carreiras</p>
+                </li>
+                <li class="invisivel menu-inv">
+                    <p>iFood Card</p>
+                </li>
             </ul>
 
             <ul>
-                <li><p>criar conta</p></li>
-                <li><p>Entrar</p></li>
+                <li class="invisivel">
+                    <p>criar conta</p>
+                </li>
+                <li id="entrar">
+                    <p>Entrar</p>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="buscar">
+            <div class="cabecalho-buscar">
+                <h1>Faça mercado no iFood</h1>
+                <p>Entregamos tudo o que precisa na porta da sua casa, de hortifruti a itens de limpeza</p>
+            </div>
+            <div>
+                <form class="input-buscar">
+                    <img src="./assets/lupa.jpg" alt="Icone de Localizar">
+                    <input type="text" placeholder="Em qual endereço você está?">
+                </form>
+                <button class="botao-buscar">Ver mercados próximos</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
