@@ -1,0 +1,63 @@
+.lojas {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.lojas>h1 {
+    margin-left: 5em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.lojas-prop {
+    color: black;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: 1px solid #dcdcdc;
+    margin-left: 1em;
+}
+
+#propagandas {
+    display: flex;
+    width: 80%;
+    margin-left: 10em;
+}
+
+.correct {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+}
+
+.lojas div:nth-last-child(2) {
+    margin-left: 11em;
+    padding-top: 2em;
+}
+
+.lojas div:nth-last-child(2) img {
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    #propagandas a:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    #propagandas {
+        margin-left: 4em;
+    }
+
+    .lojas div:nth-last-child(2) {
+        margin-left: 4em;
+    }
+}

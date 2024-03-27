@@ -1,0 +1,120 @@
+#secad {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+#mercados {
+    margin-top: 2em;
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: row;
+    width: 75em;
+    margin-left: 8em;
+}
+
+.mercado {
+    color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    border: 1px solid #dcdcdc;
+    margin-left: 1em;
+}
+
+.cadastros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 7.5em 20em 0px 15em;
+}
+
+#bestmarket {
+    margin-left: 5em;
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+.cadastro {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cadastro article {
+    width: 50%;
+    top: -2.5em;
+    bottom: 0;
+    position: absolute;
+    right: -1.25em;
+}
+
+.cadastro article>h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #1a1a1a;
+    margin-bottom: 1.25em;
+}
+
+.cadastro article>p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #717171;
+    margin-bottom: 1.25em;
+}
+
+.cadastro article>a>button {
+    color: #fff;
+    background-color: #ea1d2c;
+    padding: 1.0625em 2.0625em;
+    border-radius: 5px;
+    border: none;
+}
+
+.cadastro article>a>button:hover {
+    background-color: #c2121f;
+}
+
+.imgfood {
+    position: absolute;
+    bottom: 1.5625em;
+    left: 0;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #mercados a:last-child {
+        display: none;
+    }
+
+    #mercados {
+        justify-content: flex-start;
+        margin-left: 1em;
+    }
+
+    .mercado {
+        width: 18em;
+        margin-left: 1em;
+    }
+
+    .cadastros {
+        height: 50em;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .cadastro {
+        width: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,162 @@
+.opcoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.opcoes a {
+    text-decoration: none;
+}
+
+.container-opcoes {
+    width: 52.625em;
+    margin-top: 10em;
+}
+
+.cards-opcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-opcao {
+    width: 48%;
+    height: 13.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    position: relative;
+    border-radius: 1em;
+    padding-left: 1em;
+    background-color: #ea1d2c;
+}
+
+.card-opcao:not(.card-opcao:hover) {
+    opacity: 0.9;
+}
+
+.card-opcao:last-child {
+    background-color: #b6d048;
+}
+
+.card-opcao h2 {
+    font-size: 2.25rem;
+    color: #fff;
+}
+
+.card-opcao img {
+    resize: auto;
+    object-fit: contain;
+    width: 15.625em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-opcao button {
+    border-radius: 0.3125em;
+    border: none;
+    outline: none;
+    font-family: "SulSans Bold", sans-serif;
+    height: 2.25em;
+    padding: 0 0.75em;
+    width: 9.125em;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #cc1825;
+}
+
+.card-opcao:last-child button {
+    background-color: #9eb53e;
+}
+
+@media screen and (max-width: 900px) {
+    .container-opcoes {
+        width: 100%;
+    }
+
+    .cards-opcoes {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-opcao {
+        width: 95%;
+        margin-top: 1.25em;
+    }
+
+    .card-opcao img {
+        width: 12.5em;
+    }
+}
+
+.mini-cards-opcoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 6.25em;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mini-card figure {
+    background-color: #f6d553;
+    height: 2.95em;
+    border-radius: 0.3125em;
+    width: 11.75em;
+    position: relative;
+    bottom: 0;
+}
+
+.mini-card:nth-child(2) figure {
+    background-color: #f9879c;
+}
+
+.mini-card:nth-child(4) figure {
+    background-color: #8c60c5;
+}
+
+.mini-card img {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 65%;
+    transition: width 2s;
+}
+
+.mini-card:hover img {
+    width: 80%;
+}
+
+.mini-card span {
+    margin-top: 0.625em;
+}
+
+.mini-card span::after {
+    content: ">";
+    color: #ea1d2c;
+    font-weight: bold;
+    margin-left: 0.625em;
+}
+
+@media screen and (max-width: 900px) {
+    .mini-cards-opcoes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mini-card {
+        margin-top: 6.25em;
+    }
+}

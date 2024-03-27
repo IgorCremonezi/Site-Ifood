@@ -1,0 +1,100 @@
+.foodlover {
+    display: flex;
+    grid-template-columns: 20% 10% 70%;
+    margin: 6.25em auto;
+}
+
+.foodlover article {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5em;
+    margin-left: 15em;
+    width: 15em;
+}
+
+.foodlover article>h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: #1a1a1a;
+    margin-bottom: 1.25em;
+}
+
+.foodlover article>p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #717171;
+    margin-bottom: 1.25em;
+}
+
+.foodlover article>a>button {
+    color: #fff;
+    background-color: #ea1d2c;
+    padding: 1.0625em 2.0625em;
+    border-radius: 0.3125em;
+    border: none;
+}
+
+.foodlover article>a>button:hover {
+    background-color: #c2121f;
+}
+
+.foodlover img {
+    margin-left: 3em;
+}
+
+@media only screen and (max-width: 768px) {
+    .foodlover {
+        flex-direction: column;
+        margin-left: -6em;
+    }
+
+    .foodlover article>h2 {
+        margin-top: -2em;
+        margin-bottom: 10em;
+        font-size: 1.5rem;
+    }
+
+    .foodlover img {
+        margin-left: 8em;
+        margin-top: -20em;
+        width: 26em;
+        height: auto;
+    }
+}
+
+.beneficios-banner {
+    margin-left: 15em;
+}
+
+#naoresp img {
+    width: 90%;
+}
+
+#resp {
+    display: none;
+}
+
+#strongborda {
+    margin-top: 2em;
+    border-bottom: 5em solid #e6e3e4;
+}
+
+@media screen and (max-width: 768px) {
+    #naoresp img {
+        display: none;
+    }
+
+    #resp {
+        display: block;
+    }
+
+    #resp img {
+        width: 30em;
+        margin-left: -15em;
+        margin-top: 2em;
+    }
+
+    #strongborda {
+        margin-top: 5em;
+    }
+}

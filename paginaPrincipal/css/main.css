@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	height: 44em;
-	padding-bottom: 50px;
+	padding-bottom: 3.125em;
 	background-image: url('../assets/imgfundo.png');
 	background-size: cover;
 	text-align: center;
@@ -16,19 +16,19 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 842px;
+	width: 52.625em;
 }
 
 .cabecalho-buscar h1 {
-	font-size: 2.25rem;
+	font-size: 3em;
 	color: #1a1a1a;
-	margin: 15px 0px;
+	margin: 0.75em 0px;
 }
 
 .cabecalho-buscar p {
-	font-size: 1rem;
+	font-size: 1em;
 	color: #717171;
-	margin-bottom: 40px;
+	margin-bottom: 2.5em;
 }
 
 .input-buscar {
@@ -38,8 +38,8 @@
 	justify-content: left;
 	background-color: rgb(230, 230, 230);
 	border: rgb(230, 230, 230);
-	padding: 0px 10px;
-	border-radius: 5px;
+	padding: 0px 0.625em;
+	border-radius: 0.315em;
 }
 
 .input-buscar input {
@@ -47,15 +47,15 @@
 	outline: none;
 	border: none;
 	background-color: rgb(230, 230, 230);
-	padding: 16px;
+	padding: 1em;
 }
 
 .botao-buscar {
 	color: #fff;
 	background-color: #ea1d2c;
-	padding: 17px 33px;
-	border-radius: 5px;
-	margin-left: 10px;
+	padding: 1.0625em 2.0625em;
+	border-radius: 0.3125em;
+	margin-left: 0.625em;
 	border: none;
 	width: 20em;
 }
@@ -65,11 +65,65 @@
 }
 
 main {
-	padding-top: 80px;
+	padding-top: 5em;
 }
 
 form>img {
 	width: 1em;
 	height: 1em;
 	margin-top: 1em;
+}
+
+.opcoes-pedido {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: -12em;
+	flex-direction: column;
+	align-items: center;
+}
+
+.itens-pedido {
+	margin: 0.25em 0.125em;
+	background-color: #fff;
+	color: #717171;
+	font-weight: 300;
+	font-size: 0.5em;
+	border: 1px solid #f2f2f2;
+	padding: 1.5em 1.75em;
+	border-radius: 6.25em;
+	line-height: 1em;
+}
+
+#parte1,
+#parte2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.separador {
+    margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 768px) {
+	.cabecalho-buscar {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.buscar>div:nth-child(2) {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.botao-buscar {
+		margin-left: 0px;
+		margin-top: 0.625em;
+	}
+
+	.itens-pedido {
+		padding: 1em 0.75em;
+		font-size: 0.45em;
+	}
 }
