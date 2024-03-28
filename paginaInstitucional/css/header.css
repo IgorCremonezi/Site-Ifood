@@ -1,0 +1,86 @@
+header {
+    display: flex;
+    background-color: #eb0033;
+    color: #fff;
+    height: 47em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: -1em;
+}
+
+.barra {
+    display: flex;
+    height: 5em;
+    position: relative;
+}
+
+.menu-lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3em;
+}
+
+.menu-lista li {
+    font-size: 1.25em;
+    padding: 1.5em;
+    list-style-type: none;
+}
+
+.menu-lista li p:hover {
+    border-bottom: 2px solid white;
+}
+
+.menu-lista li:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-lista li:last-child p {
+    margin-left: 0.5em;
+}
+
+.barra button {
+    color: #eb0033;
+    font-size: 1em;
+    width: 12em;
+    height: 2.75em;
+    margin-left: 20em;
+    margin-top: 1.25em;
+    border-radius: 0.3em;
+    border: 1px solid #fff;
+}
+
+.resumo {
+    position: absolute;
+    margin-top: 6em;
+    margin-left: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.resumo #teb {
+    width: 46em;
+}
+
+.resumo #teb p:first-child {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: -0.0125em;
+}
+
+.resumo #teb p:nth-child(2) {
+    font-size: 1.5em;
+    padding-right: 3em;
+}
+
+.resumo button {
+    color: #eb0033;
+    font-size: 1em;
+    width: 15em;
+    height: 3.5em;
+    border-radius: 0.3em;
+    border: 1px solid #fff;
+    margin-top: 3em;
+}
