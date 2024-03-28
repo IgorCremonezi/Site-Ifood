@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: -30em;
+    margin-left: 40em;
+}
+
+main div {
+    width: 32em;
+    height: 28em;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .05), 0 4px 16px rgba(0, 0, 0, .06);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div p:first-child {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#howcontinue {
+    color: rgb(119, 119, 119);
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -0.5em;
+}
+
+#face {
+    font-size: 1.025em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: #4065b4;
+    width: 26em;
+    text-align: center;
+}
+
+#face img {
+    border-radius: 0.5em;
+    padding-right: 5em;
+}
+
+#goog {
+    font-size: 1.025em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    background-color: #fff;
+    width: 25em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#goog img {
+    padding-right: 4.5em;
+}
+
+.botaolinha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 26em;
+}
+
+.botaolinha button {
+    border-radius: 0.3em;
+    padding: 0.3em;
+    color: gray;
+    background-color: #fff;
+    width: 15em;
+    height: 4em;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width: 768px) {
+    main div {
+        position: fixed;
+        width: 28em;
+        height: 24em;
+        left: 1em;
+        background-color: transparent;
+        box-shadow: none;
+        top: 28em;
+    }
+
+    main div:first-child p:first-child {
+        position: fixed;
+        font-size: 1.45em;
+        top: 16em;
+    }
+
+    #howcontinue {
+        position: fixed;
+        font-size: 1em;
+        top: 28em;
+    }
+
+    #face {
+        position: fixed;
+        top: 30em;
+    }
+
+    #goog {
+        position: fixed;
+        top: 33em;
+    }
+    
+    .botaolinha {
+        margin-left: 1em;
+    }
+}
