@@ -1,0 +1,51 @@
+footer section:first-child {
+    display: flex;
+    background-color: #eb0033;
+    color: #fff;
+    height: 36em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+footer section:first-child ul {
+    margin-top: 6em;
+}
+
+footer section:first-child li {
+    list-style: none;
+    line-height: 2em;
+    font-size: 1.25em;
+}
+
+footer section:first-child li.brok {
+    line-height: normal;
+    margin-top: 0.5em;
+}
+
+footer section:first-child ul li:first-child {
+    font-weight: bold;
+}
+
+footer section:first-child ul:first-child {
+    margin-left: 3em;
+    width: 16em;
+}
+
+footer section:first-child ul:not(:first-child) {
+    margin-left: 2em;
+}
+
+footer section:first-child #redesapp {
+    margin-left: 12em;
+}
+
+footer section:first-child img {
+    margin-right: 0.25em;
+}
+
+footer section:first-child #redesapp ul:last-child {
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 768px) {
+}

@@ -1,0 +1,309 @@
+article {
+    margin-left: 5em;
+    margin-top: 4em;
+    margin-right: 5em;
+}
+
+.comunidade {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7em;
+}
+
+.comunidade h1 {
+    color: #eb0033;
+    font-size: 2.25em;
+}
+
+.comunidade div {
+    padding-right: 10em;
+}
+
+.comunidade div p {
+    font-size: 1.25em;
+    padding-right: 1.5em;
+    line-height: 1.5;
+}
+
+.comunidade div button {
+    background-color: #eb0033;
+    color: #fff;
+    font-size: 1.15em;
+    padding: 0.75em;
+    margin-top: 1em;
+    border-radius: 0.3em;
+    border: none;
+}
+
+.comunidade div button:hover {
+    background-color: #e9375d
+}
+
+.comunidade img {
+    margin-top: 2em;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        margin-left: 2em;
+        margin-right: -8em;
+    }
+
+    .comunidade {
+        flex-direction: column-reverse;
+    }
+
+    .comunidade img {
+        margin-top: -1em;
+        width: 25em;
+    }
+
+    .comunidade h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .comunidade div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comunidade div p {
+        font-size: 1em;
+        text-align: center;
+        margin-right: -1em;
+    }
+
+    .comunidade div button {
+        font-size: 1em;
+        padding: 0.75em;
+        margin-top: 1em;
+        border-radius: 0.3em;
+        border: none;
+        width: 15em;
+        align-self: center;
+    }
+}
+
+.compromissos {
+    display: flex;
+    flex-direction: row;
+}
+
+.compromissos img {
+    border-radius: 1em;
+}
+
+.compromissos h1 {
+    color: #eb0033;
+    font-size: 2.25em;
+    padding-right: 5em;
+}
+
+.compromissos div {
+    padding-left: 10em;
+}
+
+.compromissos div p {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+.compromissos div button {
+    background-color: #eb0033;
+    color: #fff;
+    font-size: 1.15em;
+    padding: 0.75em;
+    margin-top: 1em;
+    border-radius: 0.3em;
+    border: none;
+}
+
+.compromissos div button:hover {
+    background-color: #e9375d
+}
+
+@media screen and (max-width: 768px) {
+    .compromissos {
+        flex-direction: column;
+    }
+
+    .compromissos img {
+        margin-top: -1em;
+        width: 25em;
+    }
+
+    .compromissos h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding-right: 8em;
+    }
+
+    .compromissos div {
+        display: flex;
+        flex-direction: column;
+        margin-left: -10em;
+    }
+
+    .compromissos div p {
+        font-size: 1em;
+        text-align: center;
+        margin-right: 11em;
+    }
+
+    .compromissos div button {
+        font-size: 1em;
+        padding: 0.75em;
+        margin-top: 1em;
+        border-radius: 0.3em;
+        border: none;
+        width: 16em;
+        align-self: center;
+        margin-right: 10em;
+    }
+}
+
+#news {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    margin-top: 5em;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+}
+
+#news div:first-child {
+    margin-left: 6em;
+    margin-right: 6em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#news #parout {
+    padding-top: 7em;
+    text-align: center;
+}
+
+#news #titout {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#news #noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#news #noticias .notic {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    width: 25em;
+    height: 28em;
+    margin-right: 1em;
+    flex-direction: column;
+}
+
+#news #noticias .notic img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    width: 100%;
+    height: 50%;
+}
+
+#news #noticias .notic h1 {
+    font-size: 1.3em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#news #noticias .notic p {
+    font-size: 0.89em;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+}
+
+#news #noticias .notic:first-child p {
+    margin-top: -1em;
+}
+
+#news #noticias .notic:last-child h1 {
+    padding-right: 2em;
+}
+
+#news #noticias .notic .linha {
+    border: 1px solid rgb(209, 209, 209);
+    margin-top: 2.5em;
+}
+
+#news #noticias .notic:first-child .linha {
+    margin-top: 2.7em;
+}
+
+#news #noticias .notic p:last-child {
+    color: rgb(161, 161, 161);
+}
+
+#news #noticias .notic:first-child p:last-child {
+    margin-top: 1em;
+}
+
+#news button {
+    background-color: #eb0033;
+    color: #fff;
+    font-size: 1.15em;
+    padding: 0.75em;
+    margin-top: 4em;
+    margin-right: 7em;
+    margin-bottom: 4em;
+    border-radius: 0.3em;
+    border: none;
+    width: 12em;
+    align-self: flex-end;
+}
+
+#news button:hover {
+    background-color: #e9375d
+}
+
+@media screen and (max-width: 768px) {
+    #news #noticias {
+        flex-direction: column;
+    }
+
+    #news #noticias .notic {
+        margin-top: 1.5em;
+    }
+
+    #news #noticias .notic:first-child {
+        margin-left: 3em;
+    }
+
+    #news #noticias .notic:not(:first-child) {
+        margin-left: 3em;
+    }
+
+    #news #titout {
+        font-size: 1.6em;
+        margin-left: -2em;
+        padding-right: 5em;
+    }
+
+    #news #parout {
+        margin-left: -12em;
+    }
+
+    #news button {
+        font-size: 1em;
+        width: 12em;
+        margin-right: 8.5em;
+    }
+}

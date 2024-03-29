@@ -1,10 +1,14 @@
+body {
+    font-family: "Helvetica", sans-serif;
+}
+
 header {
     display: flex;
     background-color: #eb0033;
     color: #fff;
     height: 47em;
-    margin-left: -1em;
-    margin-right: -1em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
     margin-top: -1em;
 }
 
@@ -70,14 +74,14 @@ header {
 }
 
 .resumo #teb p:first-child {
-    font-size: 4.5em;
+    font-size: 4em;
     font-weight: bold;
     margin-bottom: -0.0125em;
 }
 
 .resumo #teb p:nth-child(2) {
     font-size: 1.5em;
-    padding-right: 3em;
+    padding-right: 2em;
 }
 
 .resumo button {
@@ -142,11 +146,11 @@ header {
     #hamburguer {
         display: block;
         margin-top: 2.25em;
-        margin-left: 9em;
+        margin-left: 8em;
     }
 
     header {
-        height: 55em;
+        height: 62em;
     }
 
     .menu-lista li:last-child {
