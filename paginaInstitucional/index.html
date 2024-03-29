@@ -11,19 +11,39 @@
 </head>
 
 <body>
-    <header class="menu">
+    <header>
         <nav class="barra">
             <ul class="menu-lista">
                 <li><img src="./assets/logoifoodbranco.svg" alt="Logo IFood" width="60" height="60"></li>
-                <li class="invisivel">
+                <li class="invisivel" onmouseover="showOptions('op1')" onmouseout="hideOptions('op1')">
                     <p>Sobre nós</p>
                 </li>
-                <li class="invisivel">
+                <ul id="op1">
+                    <li>Quem Somos</li>
+                    <li>Nossos Negócios</li>
+                    <li>Imprensa</li>
+                </ul>
+                <li class="invisivel" onmouseover="showOptions('op2')" onmouseout="hideOptions('op2')">
                     <p>Comunidade</p>
                 </li>
-                <li class="invisivel">
+                <ul id="op2">
+                    <li>Nosso ecossitema</li>
+                    <li>Parceiros</li>
+                    <li>Entregadores</li>
+                    <li>Clientes</li>
+                    <li>Carreiras</li>
+                    <li>iFood Labs</li>
+                </ul>
+                <li class="invisivel" onmouseover="showOptions('op3')" onmouseout="hideOptions('op3')">
                     <p>Sustentabilidade</p>
                 </li>
+                <ul id="op3">
+                    <li>Nosso Compromissos</li>
+                    <li>Governança</li>
+                    <li>Impacto Social</li>
+                    <li>Meio Ambiente</li>
+                    <li>Embalagens Sustentáveis</li>
+                </ul>
                 <li class="invisivel">
                     <p>iFood News</p>
                 </li>
@@ -33,17 +53,19 @@
             </ul>
 
             <button>Pede iFood Já!</button>
+            <i class="fas fa-bars" id="hamburguer"></i>
         </nav>
 
         <section class="resumo">
             <div id="teb">
                 <p>Comida é nossa paixão. Tecnologia, o nosso talento.</p>
-                <p>O iFood é uma empresa brasileira de tecnologia que aproxima clientes, 
-                restaurantes e entregadores de forma simples e prática. E, para proporcionar 
-                uma experiência incrível para todo mundo, nossa entrega vai muito além do delivery.</p>
+                <p>O iFood é uma empresa brasileira de tecnologia que aproxima clientes,
+                    restaurantes e entregadores de forma simples e prática. E, para proporcionar
+                    uma experiência incrível para todo mundo, nossa entrega vai muito além do delivery.</p>
                 <button>Saiba mais sobre o iFood</button>
             </div>
-            <img src="./assets/hero_home.webp" alt="Várias imagens mostrando momento de iFood">
+            <img src="./assets/hero_home.webp" alt="Várias imagens mostrando momentos de iFood">
         </section>
     </header>
+    <script src="script.js"></script>
 </body>
