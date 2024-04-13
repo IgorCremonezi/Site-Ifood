@@ -63,7 +63,7 @@ footer section:first-child .organizar #redesapp ul:last-child {
 @media screen and (max-width: 768px) {
     footer section:first-child {
         margin-left: -1em;
-        margin-right: -1em;
+        margin-right: -0.7em;
         flex-direction: column;
         font-size: 0.75em;
         height: 82em;

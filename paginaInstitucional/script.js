@@ -14,3 +14,17 @@ function hideOptions(optionId) {
     var submenuToHide = document.getElementById(optionId);
     submenuToHide.style.display = 'none';
 }
+
+document.getElementById('hamburguer').addEventListener('click', function() {
+    var menuLista = document.querySelector('.menu-lista');
+    menuLista.classList.toggle('menu-visivel');
+
+    var cabecalho = document.querySelector('.menu-header');
+    cabecalho.classList.toggle('expandido');
+
+    var hamb = document.querySelector('#hamburguer');
+    hamb.classList.toggle('clicado')
+
+    var bott = document.querySelector('.bot');
+    bott.classList.toggle('botao')
+});
